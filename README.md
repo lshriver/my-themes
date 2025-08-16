@@ -5,17 +5,33 @@ A repository dedicated to my personalized themes for webpages and apps.
 app-themes/
 │
 ├── flask/
-│   ├── base.html          # Base Jinja template
-│   ├── macros.html        # Optional shared macros
+│   ├── templates/
+│   │   ├── base.html
+│   │   └── footer.html
 │   └── static/
 │       ├── css/
-│       │   └── theme.css
-│       └── js/
-│           └── theme.js
+│       │   ├── style.css
+│       │   ├── theme.css
+│       │   ├── search.css
+│       │   ├── streamlit_style.css
+│       │   └── buttons/
+│       │       ├── buttons_1.css
+│       │       └── buttons_rainbow.css
+│       ├── js/
+│       │   ├── common.js
+│       │   ├── copy-code.js
+│       │   └── search.js
+│       └── images/         # only if they are core branding
+│           ├── logo.png
+│           └── favicon.png
 │
 ├── streamlit/
-│   ├── config.toml        # Theme colors for Streamlit
-│   └── theme.css          # Extra injected CSS (if you use st.markdown hacks)
+│   ├── config.toml         # generic theme config (colors/fonts)
+│   └── theme.css           # optional injected CSS
 │
-├── README.md              # Docs on how to use themes in Flask & Streamlit
+├── python/
+│   ├── style.py            # reusable style utils
+│   └── colormaps.py        # shared colormap definitions
+│
+├── README.md
 └── LICENSE```
