@@ -1,1 +1,28 @@
 
+
+/* Gradient text - main reusable class */
+.gradient-text-1 {
+    display: inline-block;
+    background: var(--gradient-light-to-dark-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent; 
+ }
+
+.gradient-text-1:hover {
+    filter: brightness(1.2);
+ }  
+
+.gradient-text-2 {
+    display: inline-block;
+    background: var(--gradient-green-to-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+ }
+
+ .gradient-text-2:hover {
+    filter: brightness(1.2);
+}

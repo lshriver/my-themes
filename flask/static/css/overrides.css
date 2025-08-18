@@ -1,0 +1,9 @@
+/* CSS overrides for third-party libraries/frameworks */
+
+/* Exclude inline and display LaTex math elements from Aclonica font */
+.stMarkdown mjx-container, .stMarkdown mjx-math *,
+.stMarkdown .katex, .stMarkdown .katex *,
+[data-testid="stMarkdownContainer"] mjx-container, [data-testid="stMarkdownContainer"] mjx-math *,
+[data-testid="stMarkdownContainer"] .katex, [data-testid="stMarkdownContainer"] .katex * {
+    font-family: var(--font-math) !important;
+}
