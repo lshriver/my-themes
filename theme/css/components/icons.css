@@ -1,0 +1,163 @@
+/* ==== Technology Icons Font Mapping ==== */
+.tech-icon[data-icon="python"]:before {
+  content: "🐍"; /* Python */
+}
+
+.tech-icon[data-icon="javascript"]:before {
+  content: "JS"; /* JavaScript */
+}
+
+.tech-icon[data-icon="html"]:before {
+  content: "🌐"; /* HTML */
+}
+
+.tech-icon[data-icon="css"]:before {
+  content: "🎨"; /* CSS */
+}
+
+.tech-icon[data-icon="numpy"]:before {
+  content: "🔢"; /* NumPy */
+}
+
+.tech-icon[data-icon="matplotlib"]:before {
+  content: "📈"; /* Matplotlib */
+}
+
+.tech-icon[data-icon="matlab"]:before {
+  content: "🔢"; /* MATLAB */
+}
+
+.tech-icon[data-icon="streamlit"]:before {
+  content: "🔴"; /* Streamlit */
+}
+
+.tech-icon[data-icon="plotly"]:before {
+  content: "📉"; /* Plotly */
+}
+
+.tech-icon[data-icon="networkx"]:before {
+  content: "🕸️"; /* NetworkX */
+}
+
+.tech-icon[data-icon="sqlalchemy"]:before {
+  content: "🗃️"; /* SQLAlchemy */
+}
+
+.tech-icon[data-icon="qiskit"]:before {
+  content: "🔮"; /* Qiskit */
+}
+
+/* ==== STEM Icons Font Mapping ==== */
+.stem-icon[data-icon="calculus"]:before {
+  content: "∫"; /* Calculus */
+}
+
+.stem-icon[data-icon="linear-algebra"]:before {
+  content: "📐"; /* Linear Algebra */
+}
+
+.stem-icon[data-icon="data"]:before {
+  content: "📊"; /* Data Analysis */\
+}
+
+.stem-icon[data-icon="probability"]:before {
+  content: "🎲"; /* Probability */
+}
+
+.stem-icon[data-icon="chemistry"]:before {
+  content: "⚗️"; /* Chemistry */
+}
+
+.stem-icon[data-icon="physics"]:before {
+  content: "💫"; /* Physics */
+}
+
+.stem-icon[data-icon="thermodynamics"]:before {
+  content: "🔥"; /* Thermodynamics */
+}
+
+.stem-icon[data-icon="quantum"]:before {
+  content: "⚛️"; /* Quantum */
+}
+
+.stem-icon[data-icon="stat-mechanics"]:before {
+  content: "🌡️"; /* Statistical Mechanics */
+}
+
+.stem-icon[data-icon="neuroscience"]:before {
+  content: "🧠"; /* Neuroscience */
+}
+
+.stem-icon[data-icon="nonlinear"]:before {
+  content: "🌀"; /* Nonlinear ODEs */
+}
+
+/* ==== Tooltip for tech icons ==== */
+.tech-icon .tech-icon-tooltip {
+    visibility: hidden;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+
+.tech-icon:hover .tech-icon-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Arrow for tooltip */
+.tech-icon .tech-icon-tooltip:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+
+/* ==== Tooltip for STEM icons ==== */
+.stem-icon .stem-icon-tooltip {
+  visibility: hidden;
+  position: absolute;
+  background: rgba(0, 80, 0, 0.85); /* green tint for STEM */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 10;
+}
+
+.stem-icon:hover .stem-icon-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Arrow for tooltip */
+.stem-icon .stem-icon-tooltip:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
