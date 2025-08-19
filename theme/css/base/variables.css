@@ -9,6 +9,8 @@
     --color-secondary: #f78166;
     --color-text: whitesmoke;;
     --color-muted: #8b949e;
+
+    /* 🔗 Link colors */
     --color-link: #7652f5;
     --color-link-hover: #5e17eb;
 
@@ -42,4 +44,8 @@
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
     --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
+
+    /* 🪟 Glassmorphism */
+    --glass-bg: rgba(0, 0, 0, 0.5);
+    --glass-border: rgba(255, 255, 255, 0.1);
 }

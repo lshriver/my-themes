@@ -13,10 +13,3 @@ mjk-container, mjx-container *,
     font-family: var(--font-math) !important;
 }
 
-/* Structure of your app/site layout styles */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    padding-top: 60px; /* To account for fixed header */
-}
