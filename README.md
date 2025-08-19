@@ -1,6 +1,14 @@
 # my-themes
 A repository dedicated to my personalized themes for webpages and apps.
-## File Tree 
+
+## Create CSS 'bundle'
+⚠️ Skipping minification
+
+```bash
+python3 scripts/build_bundle.py
+```
+
+## Old File Tree 
 ```
 app-themes/
 │

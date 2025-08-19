@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eigenscribe Theme Demo</title>
+    <!-- Load the bundled stylesheet (choose mified for production) -->
+    <!-- <link rel="stylesheet" href="../build/bundle.min.css"> --> 
+    <!-- If you prefer the readable version while developing, use bundle.css --> 
+    <link rel="stylesheet" href="../build/bundle.css">
+
+    <!-- Future feature: a tiny script that toggles dark/light mode -->
+        <!--
+            <script>
+                function toggleTheme() {
+                    document.documentElement.dataset.theme = 
+                        document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+                }
+            </script>
+        -->
+
+</head>
+<body>
+    <header class="site-header">
+        <h1 class=".gradient-text-1">Eigenscribe Site Header Demo</h1>
+        <!--<button onclick="toggleTheme()">Toggle dark/light</button> -->
+    </header>
+
+    <main class="content">
+        <button class="btn-primary">Primary button</button>
+        <section class="card">
+            <h2 class="gradient-text-2">h2 (gradient-text-2)</h2>
+            <input type="text" placeholder="Input field" class="input-text">
+            <select class="select-box">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 Eigenscribe - <a href="https://github.com/lshriver/my-themes">https://github.com/lshriver/my-themes</a></p>
+    </footer>
+</body>
+</html>
