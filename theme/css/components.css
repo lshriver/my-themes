@@ -8,6 +8,10 @@
     padding: 25px;
     margin-bottom: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* Add the prefixed version first (Safari/Chrome) */
+    -webkit-backdrop-filter: blur(5px);
+    /* Standard property (future-proof) */
     backdrop-filter: blur(5px);
 }
 
@@ -45,10 +49,14 @@
     padding: 25px;
     margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;
     height: 100%;
+    
+    /* Add the prefixed version first (Safari/Chrome) */
+    -webkit-backdrop-filter: blur(5px);
+    /* Standard property (future-proof) */
+    backdrop-filter: blur(5px);
 }
 
 .feature-box:hover {
