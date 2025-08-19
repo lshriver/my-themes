@@ -1,6 +1,6 @@
 # my-themes
 A repository dedicated to my personalized themes for webpages and apps.
-
+## File Tree 
 ```
 app-themes/
 │
@@ -34,4 +34,15 @@ app-themes/
 │   └── colormaps.py        # shared colormap definitions
 │
 ├── README.md
-└── LICENSE```
+└── LICENSE
+```
+
+## 'Weaving' the files together in HTML `<head>` 
+(remember order matters)
+```html
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/layouts.css">
+<link rel="stylesheet" href="/css/components.css">
+<link rel="stylesheet" href="/css/responsive.css">  
+<link rel="stylesheet" href="/css/overrides.css"> <!-- last, overrides previous -->
+```

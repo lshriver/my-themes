@@ -1,0 +1,75 @@
+/* Responsive Breakpoints for Flask Theme */
+
+/* ==== Large screens - up to 3 cards per row ==== */
+@media (min-width: 1200px) {
+    .card-row .feature-box {
+        flex-basis: calc(45% - 30px); /* 2 cards per row with gap */
+        max-width: calc(45% - 30px);
+    }
+}
+
+/* ==== Medium screens - up to 2 cards per row ==== */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .card-row .feature-box {
+        flex-basis: calc(45% - 30px); /* 2 cards per row with gap */
+        max-width: calc(45% - 30px);
+    }
+}
+
+/* ==== Small screens - single-column layout ==== */
+@media (max-width: 479px) {
+    .card-row {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+    }
+    .card-row .feature-box {
+        flex-basis: 90%; /* Full width for small screens */
+        max-width: 90%;
+    }
+}
+
+/* ==== General mibile tweaks (<= 768px) ==== */
+@media (max-width: 768px) {
+    body             { font-size: 14px; }
+    h1               { font-size: 1.8rem; }
+    h2               { font-size: 1.5rem; }
+    h3               { font-size: 1.3rem; }
+    .container       { padding: 15px; padding-top: 40px; }
+    .feature-box     { padding: 15px; margin-bottom: 50px; }
+    .card-row        { gap: 20px; }
+    .tech-icons      { gap: 5px; flex-wrap: wrap; justify-content: center; }
+    .tech-icon       { width: 30px; height: 30px; font-size: 1rem; }
+    .site-title      { font-size: 2rem !important; padding: 0.5rem !important; }
+    .btn             { width: 90%; max-width: 160px; height: 40px;
+                       font-size: calc(0.75em + 1vw); display: flex;
+                       align-items: center; justify-content: center;
+                       line-height: 1.2; padding: 0 15px; } 
+    .tooltip-content { width: calc(100% - 20px); left: 10px; }
+    .contact-links   { flex-direction: column; align-items: center; gap: 10px; }
+    .emoji-bubbles   { flex-wrap: wrap; justify-content: center; }
+    .emoji-bubble    { width: 35px; height: 35px; font-size: 1.4rem; }
+}
+
+/* ==== Extra-small screens (<= 480px) ==== */
+@media (max-width: 480px) {
+    body             { font-size: 13px; }
+    h1               { font-size: 1.6rem; }
+    h2               { font-size: 1.3rem; }
+    h3               { font-size: 1.1rem; }
+    .container       { padding: 10px; padding-top: 30px; }
+    .feature-box     { padding: 12px; margin-bottom: 40px; }
+    .site-title      { font-size: 1.8rem !important; }
+    .btn             { width: 92%; max-width: 140px; height: 38px;
+                       font-size: calc(0.7em + 0.9vw); padding: 0 10px;
+                       min-height: 36px; }
+    .tech-icon       { width: 28px; height: 28px; font-size: 0.9rem; }
+    .emoji-bubble    { width: 30px; height: 30px; font-size: 1.2rem; margin: 0 3px; }
+    img              { max-width: 100%; height: auto; }
+}
+
+/* ==== Scrollbar theming (global, not size-specific) ==== */
+::-webkit-scrollbar             { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb       { background-image: var(--gradient-cyan-to-blue); 
+                                    border-radius: 10px; }
+::-webkit-scrollbar-track       { background: rgba(0, 0, 0, 0.2); 
+                                    border-radius: 10px; }

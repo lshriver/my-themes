@@ -3,7 +3,9 @@
 :root {
     --primary: #14b5ff;
     --gradient-light-to-dark-blue: linear-gradient(to right bottom, #00e8ff, #14b5ff, #3a98ff, #0070eb);
-    --gradient-green-to-blue: linear-gradient(130deg, #22f793, #0a95eb);
+    --gradient-cyan-to-blue: linear-gradient(130deg, #00ffee, #0a95eb);
+    --gradient-green-to-blue: linear-gradient(#22f792, #27aaff);
+    --gradient-blue-to-purple: linear-gradient(to right bottom, #00e8ff, #14b5ff, #5280ff, #7952f5);
     --font-math: "Times New Roman", "Computer Modern", serif;
     --radius-pill: 50px;
 }
