@@ -1,4 +1,4 @@
-/* CSS overrides for third-party libraries/frameworks */
+/* Only streamlit-specific styles/selectors */
 
 /* Exclude inline and display LaTex math elements from Aclonica font */
 .stMarkdown mjx-container, .stMarkdown mjx-math *,

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+/* Color pallette, fonts, sizes, CSS vars */
+:root {
+    /* 🎨 Colors */
+    --color-bg: #0d1117;
+    --color-surface: #161b22;
+    --color-primary: #14b5ff;
+    --color-secondary: #f78166;
+    --color-text: whitesmoke;;
+    --color-muted: #8b949e;
+    --color-link: #7652f5;
+    --color-link-hover: #5e17eb;
+
+    /* 🌈 Gradients */
+    --gradient-light-to-dark-blue: linear-gradient(to right bottom, #00e8ff, #14b5ff, #3a98ff, #0070eb);
+    --gradient-cyan-to-blue: linear-gradient(130deg, #00ffee, #0a95eb);
+    --gradient-green-to-blue: linear-gradient(#22f792, #27aaff);
+    --gradient-blue-to-purple: linear-gradient(to right bottom, #00e8ff, #14b5ff, #5280ff, #7952f5);
+
+    /* ✍️ Typography */
+    --font-aclonica: 'Aclonica', sans-serif;
+    --font-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    --font-mono: 'Fira Code', monospace;
+    --font-math: "Times New Roman", "Computer Modern", serif;
+
+    /* 🔲 Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+
+    /* 🔘 Borders + Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+
+    --radius-pill: 50px;
+
+    /* 🌗 Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
+}

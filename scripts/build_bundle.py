@@ -25,12 +25,17 @@ BUILD_DIR.mkdir(parents=True, exist_ok=True)
 # 2️⃣ Order of files (adjust if your filenames differ)
 # ----------------------------------------------------------------------
 ORDER = [
-    "base.css",
-    "typography.css",
-    "layout.css",
+    "base/reset.css",
+    "base/variables.css",
+    "base/theme.css",
     "components.css",
-    "responsive.css",
-    "overrides.css",
+    "layout.css",
+    "components/buttons.css",
+    "components/cards.css",
+    "components/typography.css",
+    "base/responsive.css",
+    "overrides/streamlit.css",
+
 ]
 
 # ----------------------------------------------------------------------
