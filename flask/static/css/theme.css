@@ -26,3 +26,10 @@
  .gradient-text-2:hover {
     filter: brightness(1.2);
 }
+
+/* Links */
+a {
+    font-weight: bold;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
