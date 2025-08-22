@@ -2,47 +2,56 @@
 A repository dedicated to my personalized themes for webpages and apps.
 
 ## Create CSS 'bundle'
-⚠️ Skipping minification
-
 ```bash
 python3 scripts/build_bundle.py
 ```
 
-## Old File Tree 
+## File Tree 
 ```
-app-themes/
-│
-├── flask/
-│   ├── templates/
-│   │   ├── base.html
-│   │   └── footer.html
-│   └── static/
-│       ├── css/
-│       │   ├── style.css
-│       │   ├── theme.css
-│       │   ├── search.css
-│       │   ├── streamlit_style.css
-│       │   └── buttons/
-│       │       ├── buttons_1.css
-│       │       └── buttons_rainbow.css
-│       ├── js/
-│       │   ├── common.js
-│       │   ├── copy-code.js
-│       │   └── search.js
-│       └── images/         # only if they are core branding
-│           ├── logo.png
-│           └── favicon.png
-│
-├── streamlit/
-│   ├── config.toml         # generic theme config (colors/fonts)
-│   └── theme.css           # optional injected CSS
-│
-├── python/
-│   ├── style.py            # reusable style utils
-│   └── colormaps.py        # shared colormap definitions
-│
+my-themes
+├── demo
+│   ├── icon-testing.html
+│   └── index.html
+├── __init__.py
+├── LICENSE
+├── package.json
+├── package-lock.json
+├── pyproject.toml
 ├── README.md
-└── LICENSE
+├── scripts
+│   └── build_bundle.py
+├── theme
+│   ├── css
+│   │   ├── base
+│   │   │   ├── layout.css
+│   │   │   ├── reset.css
+│   │   │   ├── responsive.css
+│   │   │   ├── theme.css
+│   │   │   └── variables.css
+│   │   ├── components
+│   │   │   ├── buttons.css
+│   │   │   ├── cards.css
+│   │   │   ├── feature-box.css
+│   │   │   ├── icons.css
+│   │   │   ├── search.css
+│   │   │   └── typography.css
+│   │   ├── overrides
+│   │   │   ├── flask.css
+│   │   │   ├── html.css
+│   │   │   └── streamlit.css
+│   │   └── utilities
+│   │       ├── grid.css
+│   │       └── utilities.css
+│   ├── images
+│   │   ├── dragon.png
+│   │   ├── ember.png
+│   │   ├── favicon.png
+│   │   └── wisp.jpg
+│   └── js
+│       ├── common.js
+│       ├── copy-code.js
+│       └── search.js
+└── tree.txt
 ```
 
 ## 'Weaving' the files together in HTML `<head>` 
