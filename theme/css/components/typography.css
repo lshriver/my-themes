@@ -25,9 +25,20 @@
     filter: brightness(1.2);
 }
 
-/* Links */
+/* ==== Links ==== */
 a {
     font-weight: bold;
     text-decoration: underline;
     transition: all 0.3s ease;
+}
+
+/* ==== Emoji style to restore original colors ==== */
+.emoji {
+    background: none !important;
+    color: initial !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+    font-style: normal;
+    text-shadow: none;
+    display: inline-block;
 }

@@ -1,43 +1,3 @@
-/* ==== Base Icon Styles ==== */
-.icon {
-  position: relative;
-  font-size: 1.8rem;
-  margin: 0.5rem;
-  display: inline-black; 
-  cursor: default;
-  transition: transform 0.2s ease, filter 0.2s ease;
-}
-
-/* Hover animation (applies to both STEM & Tech) */
-.icon:hover {
-  transform: scale(1.2);
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)); 
-}
-
-/* ==== Tooltip ==== */
-.icon-tooltip {
-  visibility: hidden;
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 4px 8px;
-  position: absolute; 
-  bottom: 125%; /* place above */
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  white-space: nowrap;
-  font-size: 0.8rem;
-  z-index: 100;
-}
-
-.icon:hover .icon-tooltip {
-  visibility: visible;
-  opacity: 1;
-}
-
 /* ==== Tech Icons (font mapping ?) ==== */
 .tech-icon[data-icon="matlab"]:before { content: "🔢"; }            /* MATLAB */
 .tech-icon[data-icon="python"]:before { content: "🐍"; }            /* Python */
@@ -52,10 +12,6 @@
 .tech-icon[data-icon="streamlit"]:before { content: "🎈"; }         /* Streamlit */
 .tech-icon[data-icon="quiskit"]:before { content: "🔮"; }           /* Quiskit */                                          
 
-/* Tech default style */
-.tech-icon {
-  color: #007acc;  /* blue-ish */
-}
 
 /* ==== STEM Icons (font mapping) ==== */
 .stem-icon[data-icon="calculus"]:before { content: "∫"; }             /* Calculus */
@@ -70,13 +26,40 @@
 .stem-icon[data-icon="neuro"]:before { content: "🧠"; }              /* Neuroscience */
 .stem-icon[data-icon="nonlinear"]:before { content: "🌀"; }          /* Nonlinear ODEs */
 
-/* STEM default style */
-.stem-icon {
-  color: #28a745;    /* green-ish */
+/* ==== Tooltip for both STEM & Tech ==== */
+.tech-icon .tech-icon-tooltip 
+.stem-icon .stem-icon-tooltip{
+  visibility: hidden;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 10;
 }
 
-/* ==== Optional Floating Animation (fun effect) ==== */
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
+tech.icon:hover .tech-icon-tooltip
+stem-icon:hover .stem-icon-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ==== Arrow for tooltip ==== */
+.tech-icon .tech-icon-tooltip:after 
+.stem-icon .stem-icon-tooltip:after {
+  content: "";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
 }

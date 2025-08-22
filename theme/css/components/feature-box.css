@@ -3,7 +3,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 70px;        /* Increased from 20px to 70px to make room for icons */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -13,6 +13,7 @@
     -webkit-backdrop-filter: blur(5px);
     /* Standard property (future-proof) */
     backdrop-filter: blur(5px);
+    position: relative; /* needed for absolute postiioning of icons */
 }
 
 .feature-box:hover {
