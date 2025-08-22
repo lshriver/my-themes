@@ -31,6 +31,8 @@ ORDER = [
     "base/layout.css",
 
     "components/buttons.css",
+    "components/search.css",
+    "components/icons.css",
     "components/cards.css",
     "components/feature-box.css",  
     "components/typography.css",
