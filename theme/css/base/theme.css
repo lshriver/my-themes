@@ -1,6 +1,11 @@
-/* Core theme (bright and pretty rules) */
+/* theme.css */
 
-/* Background */
+/* ==== Global Font ==== */
+* {
+    font-family: var(--font-aclonica);
+}
+
+/* ==== Background ==== */
 html, body, [class*=css] {
     margin: 0;
     padding: 0;
