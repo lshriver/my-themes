@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eigenscribe Theme Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load the bundled stylesheet (choose mified for production) -->
+    <!-- <link rel="stylesheet" href="../build/bundle.min.css"> --> 
+    <!-- If you prefer the readable version while developing, use bundle.css --> 
+    <link rel="stylesheet" href="../build/bundle.css">
+
+    <!-- Future feature: a tiny script that toggles dark/light mode -->
+        <!--
+            <script>
+                function toggleTheme() {
+                    document.documentElement.dataset.theme = 
+                        document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+                }
+            </script>
+        -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="section-content">
+                <h1 class="gradient-text-1">Welcome to the Theme Demo</h1>
+                <p>
+                    This page demonstrates the custom CSS bundle in a simple Flask app.
+                </p>
+                <a href="#" class="btn"><span>Click Me</span></a>
+            </div>
+        </div>
+
+        <div class="feature-box glass-card">
+            <div class="feature-box-content">
+                <h3>Feature Box</h3>
+                <p>
+                    A demo of the glassmorphic card style.
+                </p>
+            </div>
+            <div class="icons">
+                <span class="tech-icon" data-icon="python"></span>
+                <span class="tech-icon" data-icon="javascript"></span>
+                <span class="stem-icon" data-icon="neuro"></span>
+            </div>
+        </div>
+
+        <div class="contact-links">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>© 2025 Eigenscribe - <a href="https://github.com/lshriver/my-themes">https://github.com/lshriver/my-themes</a></p>
+    </footer>
+</body>
+</html>

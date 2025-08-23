@@ -1,4 +1,4 @@
-/* ==== Tech Icons (font mapping ?) ==== */
+/* ==== Tech Icons (font mapping) ==== */
 .tech-icon[data-icon="matlab"]:before { content: "🔢"; }            /* MATLAB */
 .tech-icon[data-icon="python"]:before { content: "🐍"; }            /* Python */
 .tech-icon[data-icon="javascript"]:before { content: "🟨"; }        /* JavaScript */
