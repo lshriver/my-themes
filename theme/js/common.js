@@ -3,7 +3,7 @@
 // Initialize tooltips and copy code buttons
 document.addEventListener('DOMContentLoaded', function() {
     // Tech icon hover effect
-    const techIcons = document.querySelectorAll('.tech-icon');
+    const techIcons = document.querySelectorAll('.tech-icon, .stem-icon');
     
     techIcons.forEach(icon => {
         icon.addEventListener('mouseenter', function() {
