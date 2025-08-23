@@ -20,7 +20,7 @@
 .stem-icon[data-icon="data"]:before { content: "📊"; }               /* Data Analysis */
 .stem-icon[data-icon="chemistry"]:before { content: "⚗️"; }          /* Chemistry */
 .stem-icon[data-icon="physics"]:before { content: "🌌"; }            /* Physics */
-.stem-icon[data-icon="thermo"]:berfore { content: "🔥"; }            /* Thermodynamics */
+.stem-icon[data-icon="thermo"]:before { content: "🔥"; }            /* Thermodynamics */
 .stem-icon[data-icon="quantum"]:before { content: "⚛️"; }            /* Quantum Mechanics */
 .stem-icon[data-icon="stat-mech"]:before { content: "🌡️"; }          /* Statilstical Mechanics */
 .stem-icon[data-icon="neuro"]:before { content: "🧠"; }              /* Neuroscience */

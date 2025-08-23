@@ -73,7 +73,7 @@ a.btn {
     align-items: center;
 }
 
-btn:hover {
+.btn:hover {
     background-position: 100% 0;
     filter: brightness(1.1);
     transition: all 0.4s ease-in-out;

@@ -96,7 +96,7 @@
 .search-input {
   flex-grow: 1;
   background-color: rgba(0, 30, 60, 0.5);
-  border: 1px solid(0, 200, 255, 0.3);
+  border: 1px solid rgba(0, 200, 255, 0.3);
   border-radius: 8px 0 0 8px;
   padding: 12px 15px;
   color: white;
@@ -228,7 +228,7 @@
   0% { background-color: rgba(0, 255, 255, 0); }
   25% { background-color: rgba(0, 255, 255, 0.2); }
   75% { background-color: rgba(0, 255, 255, 0.2); }
-  100% { background-color: rbgba(0, 255, 255, 0); }
+  100% { background-color: rgba(0, 255, 255, 0); }
 }
 
 /* ==== Mobile Responsiveness ==== */

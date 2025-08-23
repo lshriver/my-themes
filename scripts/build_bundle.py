@@ -25,9 +25,9 @@ BUILD_DIR.mkdir(parents=True, exist_ok=True)
 # 2️⃣ Order of files (adjust if your filenames differ)
 # ----------------------------------------------------------------------
 ORDER = [
-    "base/reset.css",
     "base/variables.css",
     "base/theme.css",
+    "base/reset.css",
     "base/layout.css",
 
     "components/buttons.css",

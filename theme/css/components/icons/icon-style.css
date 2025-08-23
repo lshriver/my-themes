@@ -43,7 +43,7 @@
     border-color: rgba(10, 10, 20, 0.9) transparent transparent transparent;
 }
 
-.tech-tag .stem-tag {
+.tech-tag, .stem-tag {
     display: inline-block;
     border-radius: 15px;
     padding: 3px 10px;
@@ -86,7 +86,7 @@
 
 /* Technology and STEM Icon Style */
 
-.tech-icon .stem-icon {
+.tech-icon, .stem-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,16 +103,16 @@
 }
 
 .tech-icon {
-    background: linear-graedient(145deg, rgba(34 , 247, 147, 0.2), rgba(10, 149, 235, 0.3));
+    background: linear-gradient(145deg, rgba(34 , 247, 147, 0.2), rgba(10, 149, 235, 0.3));
 }
 
 .stem-icon {
     background: linear-gradient(145deg, rgba(169, 34, 247, 0.2), rgba(10, 149, 235, 0.3));
 }
 
-.tech-icon:hover .stem-icon:hover {
+.tech-icon:hover, .stem-icon:hover {
     transform: translateY(-5px) scale(1.1);
-    box-shadow: - 5px 15px rgba(10, 149, 235, 0.3);
+    box-shadow: -5px 15px rgba(10, 149, 235, 0.3);
 }
 
 .tech-icon:hover {
