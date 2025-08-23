@@ -12,8 +12,8 @@ import sys  # <-- needed for sys.stderr
 # Paths
 # ----------------------------------------------------------------------
 ROOT = pathlib.Path(__file__).resolve().parents[1]   # repo root
-SRC_CSS = ROOT / "theme" / "css"
-BUILD_DIR = ROOT / "build"
+SRC_CSS = ROOT / "static" / "theme" / "css"
+BUILD_DIR = ROOT / "static" / "build"
 
 # ----------------------------------------------------------------------
 # 1️⃣ Clean old build
