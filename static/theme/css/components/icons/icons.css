@@ -27,7 +27,8 @@
 .stem-icon[data-icon="nonlinear"]:before { content: "🌀"; }          /* Nonlinear ODEs */
 
 /* ==== Tooltip for both STEM & Tech ==== */
-.icon .icon-tooltip {
+.tech-icon .tech-icon-tooltip,
+.stem-icon .stem-icon-tooltip {
   visibility: hidden;
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
@@ -44,13 +45,15 @@
   z-index: 10;
 }
 
-.icon:hover .icon-tooltip {
+.tech-icon:hover .tech-icon-tooltip,
+.stem-icon:hover .stem-icon-tooltip {
   visibility: visible;
   opacity: 1;
 }
 
 /* ==== Arrow for tooltip ==== */
-.icon .icon-tooltip:after {
+.tech-icon .tech-icon-tooltip:after,
+.stem-icon .stem-icon-tooltip:after {
   content: "";
   position: absolute;
   top: 100%; /* At the bottom of the tooltip */

@@ -95,7 +95,7 @@
     border-radius: 50%;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--glass-border);
     transition: all 0.3s ease;
     cursor: default;
     z-index: 20;    /* Match the container's z-index */
@@ -103,11 +103,11 @@
 }
 
 .tech-icon {
-    background: linear-gradient(145deg, rgba(34 , 247, 147, 0.2), rgba(10, 149, 235, 0.3));
+    background: var(--tech-icon-gradient);
 }
 
 .stem-icon {
-    background: linear-gradient(145deg, rgba(169, 34, 247, 0.2), rgba(10, 149, 235, 0.3));
+    background: var(--stem-icon-gradient);
 }
 
 .tech-icon:hover, .stem-icon:hover {
@@ -124,6 +124,23 @@
 }
 
 /* ==== Emoji bubbles for hover effect ==== */
+/* Make space for icons under feature box */
+.feature-box {
+    margin-bottom: 70px; /* Increased significantly to make room for the tech icons */
+    position: relative; /* Needed for absolute positioning of tech icons */
+}
+
+/* Emoji style to restore original colors */
+.emoji {
+    background: none !important;
+    color: initial !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+    font-style: normal;
+    text-shadow: none;
+    display: inline-block;
+}
+
 .emoji-bubbles {
     position: absolute;
     top: -40px;
@@ -169,6 +186,5 @@
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
-    100% { transform: translateY(100px); }
-
+    100% { transform: translateY(0px); }
 }

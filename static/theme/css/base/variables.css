@@ -51,4 +51,13 @@
     /* 🪟 Glassmorphism */
     --glass-bg: rgba(0, 0, 0, 0.5);
     --glass-border: rgba(255, 255, 255, 0.1);
+
+    /* #️⃣ Heading Gradients */
+    --heading-gradient-1: var(--gradient-cyan-to-blue);
+    --heading-gradient-2: var(--gradient-light-to-dark-blue);
+    --heading-gradient-3: var(--gradient-green-to-blue);
+
+    /* Tech and STEM Icon Gradients */
+    --tech-icon-gradient: linear-gradient(145deg, rgba(34 , 247, 147, 0.2), rgba(10, 149, 235, 0.3));
+    --stem-icon-gradient: linear-gradient(145deg, rgba(169, 34, 247, 0.2), rgba(10, 149, 235, 0.3));
 }

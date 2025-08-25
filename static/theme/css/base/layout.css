@@ -34,14 +34,3 @@
     align-items: flex-start;
     padding: 15px;
 }
-
-.section h1, .section h2, .section h3 {
-    font-weight: bold;
-    background: var(--gradient-light-to-dark-blue);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    margin-top: 0;
-    width: 100%;
-}
