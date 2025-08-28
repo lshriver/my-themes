@@ -1,0 +1,102 @@
+/* ==== Site Header ==== */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--glass-border);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    padding: var(--space-sm) var(--space-lg);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-title {
+    font-family: var(--font-aclonica);
+    font-size: 2.4rem;
+    font-weight: bold;
+    background: var(--gradient-blue-to-purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+    padding: var(--space-sm) 0;
+    cursor: pointer; 
+    transition: filter 0.3s ease;
+}
+
+.site-title:hover {
+    filter: brightness(1.25)
+}
+
+/* ==== Navigation Menu ==== */
+.nav {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.nav a {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 6px 12px;
+    border-radius: var(--radius-pill);
+    text-decoration: none;
+    color:var(--color-text);
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    background: var(--gradient-cyan-to-blue);
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+/* ==== Hero Section ==== */
+.hero {
+    margin-top: 80px;   /* below fixed header */
+    text-align: center;
+    padding: var(--space-xl) var(--space-lg);
+    background: var(--gradient-light-to-dark-blue);
+    border-radius: var(--radius-lg);
+    color: white;
+    box-shadow: var(--shadow-md);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: var(--space-md);
+    background: var(--gradient-light-to-dark-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: tranparent;
+    background-clip: text;
+}
+
+.hero p {
+    font-size: 1.2 rem;
+    max-width: 800px;
+    margin: 0 auto var(--space-md) auto;
+    color: var(--color-text);
+}
+
+/* ==== Hero Call to Action ==== */
+.hero .btn {
+    margin-top:var(--space-lg);
+    width: auto;
+    padding: 0 40px;
+}
+
+/* ==== Footer ==== */ 
+.site-footer {
+    background: var(--glass-bg);
+    border-top: 1px solid var(--glass-border);
+    text-align: center;
+    padding: var(--space-md);
+    color: var(--color-muted);
+    margin-top: var(--space-xl);
+    font-size: 0.9rem;
+}
