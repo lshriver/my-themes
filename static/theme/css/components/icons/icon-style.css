@@ -87,19 +87,22 @@
 /* Technology and STEM Icon Style */
 
 .tech-icon, .stem-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative; /* allow pseudo-elements to be placed */
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    font-size: 18px;
+    cursor: default;
+    z-index: 1;
+    overflow: visible;
+    border: 1px solid var(--glass-border);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    border: 1px solid var(--glass-border);
     transition: all 0.3s ease;
-    cursor: default;
-    z-index: 20;    /* Match the container's z-index */
-    position: relative;
 }
 
 .tech-icon {
@@ -108,6 +111,25 @@
 
 .stem-icon {
     background: var(--stem-icon-gradient);
+}
+
+/* Bubble aura behind the icon */
+.tech-icon::before, .stem-icon::before {
+    content: '';
+    position: absolute;
+    top: -5px; left: -5px;
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%,
+                                 rgba(255, 255, 255, 0.6) 0%,
+                                 rgba(0, 255, 255, 0.2) 60%,
+                                 rgba(0,0,0,0.1) 100%);
+    box-shadow: 
+        0 0 10px 2px rgba(0,255,255,0.3),
+        0 5px 15px rgba(0, 0, 0, 0.3),
+        inset 0 2px 8px rgba(255,255,255,0.3);
+    z-index: -1; /* behind the actual icon */ 
+    animation: float 3s ease-in-out infinite;
 }
 
 .tech-icon:hover, .stem-icon:hover {
@@ -128,17 +150,6 @@
 .feature-box {
     margin-bottom: 70px; /* Increased significantly to make room for the tech icons */
     position: relative; /* Needed for absolute positioning of tech icons */
-}
-
-/* Emoji style to restore original colors */
-.emoji {
-    background: none !important;
-    color: initial !important;
-    -webkit-background-clip: initial !important;
-    background-clip: initial !important;
-    font-style: normal;
-    text-shadow: none;
-    display: inline-block;
 }
 
 .emoji-bubbles {
