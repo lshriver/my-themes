@@ -23,7 +23,7 @@
 .stem-icon[data-icon="thermo"]:before { content: "🔥"; }            /* Thermodynamics */
 .stem-icon[data-icon="quantum"]:before { content: "⚛️"; }            /* Quantum Mechanics */
 .stem-icon[data-icon="stat-mech"]:before { content: "🌡️"; }          /* Statilstical Mechanics */
-.stem-icon[data-icon="neuro"]:before { content: "🧠"; }              /* Neuroscience */
+.stem-icon[data-icon="neuro"]::before { content: "🧠"; }              /* Neuroscience */
 .stem-icon[data-icon="nonlinear"]:before { content: "🌀"; }          /* Nonlinear ODEs */
 
 /* ==== Tooltip for both STEM & Tech ==== */

@@ -106,6 +106,9 @@
     background: transparent;
 }
 
+.tech-icon { background: var(--tech-icon-gradient); }
+.stem-icon { background: var(--stem-icon-gradient); }
+
 /* Bubble aura behind the icon */
 .tech-icon::before, .stem-icon::before {
     content: '';
@@ -128,14 +131,7 @@
 .tech-icon:hover, .stem-icon:hover {
     transform: translateY(-5px) scale(1.1);
     box-shadow: -5px 15px rgba(10, 149, 235, 0.3);
-}
-
-.tech-icon:hover {
-    background: var(--tech-icon-gradient);
-}
-
-.stem-icon:hover {
-    background: var(--stem-icon-gradient)
+    filter: brightness(1.1);
 }
 
 .tech-icon::after, .stem-icon::after {
@@ -143,7 +139,7 @@
     font-size: 1.2rem;
     line-height: 1; /* cleaner inline alignment */
     z-index: 2; /* above aura */
-    animation: float 3s ease-in-out indfinite; /* adds floating */
+    animation: float 3s ease-in-out infinite; /* adds floating */
     display: flex;
     justify-content: center;
     align-items: center;
