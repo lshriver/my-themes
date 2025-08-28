@@ -1,16 +1,16 @@
 /* ==== Tech Icons (font mapping) ==== */
-.tech-icon[data-icon="matlab"]:before { content: "🔢"; }            /* MATLAB */
-.tech-icon[data-icon="python"]:before { content: "🐍"; }            /* Python */
-.tech-icon[data-icon="javascript"]:before { content: "🟨"; }        /* JavaScript */
-.tech-icon[data-icon="html"]:before { content: "🌐"; }              /* HTML */
-.tech-icon[data-icon="css"]:before { content: "🎨"; }               /* CSS */
-.tech-icon[data-icon="sqalchemy"]:before { content: "🗃️"; }         /* SQAlchemy */
-.tech-icon[data-icon="numpy"]:before { content: "🔢"; }             /* Numpy */
-.tech-icon[data-icon="matplotlib"]:before { content: "📈"; }        /* Matplotlib */
-.tech-icon[data-icon="plotly"]:before { content: "📉"; }            /* Plotly */
-.tech-icon[data-icon="networkx"]:before { content: "🕸️"; }          /* NetworkX */
-.tech-icon[data-icon="streamlit"]:before { content: "🎈"; }         /* Streamlit */
-.tech-icon[data-icon="quiskit"]:before { content: "🔮"; }           /* Quiskit */                                          
+.tech-icon[data-icon="matlab"]::after { content: "🔢"; }            /* MATLAB */
+.tech-icon[data-icon="python"]::after { content: "🐍"; }            /* Python */
+.tech-icon[data-icon="javascript"]::after { content: "🟨"; }        /* JavaScript */
+.tech-icon[data-icon="html"]::after { content: "🌐"; }              /* HTML */
+.tech-icon[data-icon="css"]::after { content: "🎨"; }               /* CSS */
+.tech-icon[data-icon="sqalchemy"]::after { content: "🗃️"; }         /* SQAlchemy */
+.tech-icon[data-icon="numpy"]::after { content: "🔢"; }             /* Numpy */
+.tech-icon[data-icon="matplotlib"]::after { content: "📈"; }        /* Matplotlib */
+.tech-icon[data-icon="plotly"]::after { content: "📉"; }            /* Plotly */
+.tech-icon[data-icon="networkx"]::after { content: "🕸️"; }          /* NetworkX */
+.tech-icon[data-icon="streamlit"]::after { content: "🎈"; }         /* Streamlit */
+.tech-icon[data-icon="quiskit"]::after { content: "🔮"; }           /* Quiskit */                                          
 
 
 /* ==== STEM Icons (font mapping) ==== */
@@ -52,8 +52,8 @@
 }
 
 /* ==== Arrow for tooltip ==== */
-.tech-icon .tech-icon-tooltip:after,
-.stem-icon .stem-icon-tooltip:after {
+.tech-icon .tech-icon-tooltip::after,
+.stem-icon .stem-icon-tooltip::after {
   content: "";
   position: absolute;
   top: 100%; /* At the bottom of the tooltip */

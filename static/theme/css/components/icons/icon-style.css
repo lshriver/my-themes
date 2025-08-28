@@ -103,14 +103,7 @@
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     transition: all 0.3s ease;
-}
-
-.tech-icon {
-    background: var(--tech-icon-gradient);
-}
-
-.stem-icon {
-    background: var(--stem-icon-gradient);
+    background: transparent;
 }
 
 /* Bubble aura behind the icon */
@@ -138,11 +131,23 @@
 }
 
 .tech-icon:hover {
-    background: linear-gradient(145deg, rgba(34, 247, 147, 0.4), rgba(10, 149, 235, 0.3));
+    background: var(--tech-icon-gradient);
 }
 
 .stem-icon:hover {
-    background: linear-gradient(145deg, rgba(169, 34, 247, 0.2), rgba(10, 149, 235, 0.3));
+    background: var(--stem-icon-gradient)
+}
+
+.tech-icon::after, .stem-icon::after {
+    position: relative;
+    font-size: 1.2rem;
+    line-height: 1; /* cleaner inline alignment */
+    z-index: 2; /* above aura */
+    animation: float 3s ease-in-out indfinite; /* adds floating */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-delay: 0.15s; 
 }
 
 /* ==== Emoji bubbles for hover effect ==== */
