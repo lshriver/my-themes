@@ -14,17 +14,17 @@
 
 
 /* ==== STEM Icons (font mapping) ==== */
-.stem-icon[data-icon="calculus"]:before { content: "∫"; }             /* Calculus */
-.stem-icon[data-icon="probability"]:before { content: "🎲"; }        /* Probability */
-.stem-icon[data-icon="linear-algebra"]:before { content: "📐"; }     /* Linear Algebra */
-.stem-icon[data-icon="data"]:before { content: "📊"; }               /* Data Analysis */
-.stem-icon[data-icon="chemistry"]:before { content: "⚗️"; }          /* Chemistry */
-.stem-icon[data-icon="physics"]:before { content: "🌌"; }            /* Physics */
-.stem-icon[data-icon="thermo"]:before { content: "🔥"; }            /* Thermodynamics */
-.stem-icon[data-icon="quantum"]:before { content: "⚛️"; }            /* Quantum Mechanics */
-.stem-icon[data-icon="stat-mech"]:before { content: "🌡️"; }          /* Statilstical Mechanics */
-.stem-icon[data-icon="neuro"]::before { content: "🧠"; }              /* Neuroscience */
-.stem-icon[data-icon="nonlinear"]:before { content: "🌀"; }          /* Nonlinear ODEs */
+.stem-icon[data-icon="calculus"]::after { content: "∫"; }             /* Calculus */
+.stem-icon[data-icon="probability"]::after { content: "🎲"; }        /* Probability */
+.stem-icon[data-icon="linear-algebra"]::after { content: "📐"; }     /* Linear Algebra */
+.stem-icon[data-icon="data"]::after { content: "📊"; }               /* Data Analysis */
+.stem-icon[data-icon="chemistry"]::after { content: "⚗️"; }          /* Chemistry */
+.stem-icon[data-icon="physics"]::after { content: "🌌"; }            /* Physics */
+.stem-icon[data-icon="thermo"]::after { content: "🔥"; }            /* Thermodynamics */
+.stem-icon[data-icon="quantum"]::after { content: "⚛️"; }            /* Quantum Mechanics */
+.stem-icon[data-icon="stat-mech"]::after { content: "🌡️"; }          /* Statilstical Mechanics */
+.stem-icon[data-icon="neuro"]::after { content: "🧠"; }              /* Neuroscience */
+.stem-icon[data-icon="nonlinear"]::after { content: "🌀"; }          /* Nonlinear ODEs */
 
 /* ==== Tooltip for both STEM & Tech ==== */
 .tech-icon .tech-icon-tooltip,

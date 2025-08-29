@@ -15,7 +15,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <!-- More math rendering -->
-    <script src="{{ url_for('static', filename='js/math.js') }}"></script>
+    <script src="{{ url_for('static', filename='theme/js/math.js') }}"></script>
 
     <!-- Future feature: a tiny script that toggles dark/light mode -->
         <!--
@@ -30,10 +30,10 @@
 </head>
 <body>
     <header class="site-header">
-        <h1 class="site-title">My STEM Lab</h1>
+        <h1 class="site-title">Eigenscribe</h1>
         <nav class="nav">
-            <a href="#projects">Projects</a>
-            <a href="#resources">Resources</a>
+            <a href="#projects">Scriber Labs</a>
+            <a href="#projects">The Scriber Experience</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -94,7 +94,7 @@
     <!-- Common script for all pages -->
     <script src="{{ url_for('static', filename='theme/js/common.js') }}"></script>
     <script src="{{ url_for('static', filename='theme/js/copy-code.js') }}"></script>
-    <script src="{{ url_for('static', filename='/theme/js/search.js') }}"></script>
+    <script src="{{ url_for('static', filename='theme/js/search.js') }}"></script>
 
     <footer class="site-footer">
         <p>© 2025 Eigenscribe - <a href="https://github.com/eigenscribe/my-themes">https://github.com/eigenscribe/my-themes</a></p>
