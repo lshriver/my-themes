@@ -1,164 +1,4 @@
-.tech-icon, .stem-icon {
-    position: relative; /* allow pseudo-elements to be placed */
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    color: white;
-    font-size: 18px;
-    cursor: default;
-    z-index: 1;
-    overflow: visible;
-    border: 1px solid var(--glass-border);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    transition: all 0.3s ease;
-    background: transparent;
-}
-
-.tech-icon { background: var(--tech-icon-gradient); }
-.stem-icon { background: var(--stem-icon-gradient); }
-
-/* Bubble aura behind the icon */
-.tech-icon::before, .stem-icon::before {
-    content: '';
-    position: absolute;
-    top: -5px; left: -5px;
-    width: 50px; height: 50px;
-    border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%,
-                                 rgba(255, 255, 255, 0.6) 0%,
-                                 rgba(0, 255, 255, 0.2) 60%,
-                                 rgba(0,0,0,0.1) 100%);
-    box-shadow: 
-        0 0 10px 2px rgba(0,255,255,0.3),
-        0 5px 15px rgba(0, 0, 0, 0.3),
-        inset 0 2px 8px rgba(255,255,255,0.3);
-    z-index: -1; /* behind the actual icon */ 
-    animation: float 3s ease-in-out infinite;
-}
-
-.tech-icon:hover, .stem-icon:hover {
-    transform: /* translateY(-5px) */ scale(1.1);
-    box-shadow: -5px 15px rgba(10, 149, 235, 0.3);
-    filter: brightness(1.1);
-}
-
-.tech-icon::after, .stem-icon::after {
-    position: relative;
-    font-size: 1.2rem;
-    line-height: 1; /* cleaner inline alignment */
-    z-index: 2; /* above aura */
-    animation: float 3s ease-in-out infinite; /* adds floating */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-delay: 0.15s; 
-}
-
-/* ==== Tooltip styles for Tech & STEM icons ==== */
-.tech-icon .tech-icon-tooltip,
-.stem-icon .stem-icon-tooltip {
-  visibility: hidden;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.7rem;
-  bottom: 120%;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.3s;
-  z-index: 10;
-}
-
-.tech-icon:hover .tech-icon-tooltip,
-.stem-icon:hover .stem-icon-tooltip {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* ==== Arrow for tooltip ==== */
-.tech-icon .tech-icon-tooltip::after,
-.stem-icon .stem-icon-tooltip::after {
-  content: "";
-  position: absolute;
-  top: 100%; /* At the bottom of the tooltip */
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
-}
-
-.tooltip-container {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
-.tooltip-content {
-    visibility: hidden;
-    width: 100%;
-    background: rgba(10, 10, 20, 0.9); 
-    color: #fff;
-    text-align: left;       /* Keep tooltip left-aligned for readability */
-    border-radius: 6px;
-    padding: 15px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.3s, transform 0.3s;
-    transform: translateY(10px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-}
-
-.tooltip-container:hover .tooltip-content {
-    visibility: visible;
-    opacity: 1;
-}
-
-.tooltip-container::after {
-    content: "";
-    position: absolute; 
-    top: 100%;
-    left: 15%;
-    margin-left: -8px;
-    border-width: 8px;
-    border-style: solid;
-    border-color: rgba(10, 10, 20, 0.9) transparent transparent transparent;
-}
-
-.tech-tag, .stem-tag {
-    display: inline-block;
-    border-radius: 15px;
-    padding: 3px 10px;
-    margin: 3px;
-    font-size: 0.8rem;
-    color: white;
-}
-
-.tech-tag {
-    background: linear-gradient(130deg, rgba(34, 247, 147, 0.2), rgba(10, 149, 235, 0.2));
-    border: 1px solid rgba(34, 247, 147, 0.3);
-}
-
-.stem-tag {
-    background: linear-gradient(130deg, rgba(169, 34, 247, 0.2), rgba(10, 149, 235, 0.2));
-    border: 1px solid rgba(169, 34, 247, 0.2);
-}
-
-/* ==== Tech & STEM Icons Container ==== */
+/* ==== Base Icon Container ==== */
 .icons {
     display: flex;
     flex-wrap: wrap;
@@ -180,28 +20,123 @@
     transform: translateY(0);
 }
 
-/* Technology and STEM Icon Style */
-
-
-
-/* ==== Emoji bubbles for hover effect ==== */
-/* Make space for icons under feature box */
+/* ==== Feature Box ==== */
 .feature-box {
-    margin-bottom: 70px; /* Increased significantly to make room for the tech icons */
-    position: relative; /* Needed for absolute positioning of tech icons */
+    margin-bottom: 70px;
+    position: relative;
 }
 
+/* ==== Base Icon Styles ==== */
+.tech-icon, .stem-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    cursor: default;
+    z-index: 1;
+    overflow: visible;
+    border: 1px solid var(--glass-border);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.tech-icon {
+    background: var(--tech-icon-gradient); /* Hueish gradient for tech icons */
+}
+
+.stem-icon {
+    background: var(--stem-icon-gradient); /* Hueish gradient for STEM icons */
+}
+
+/* ==== Icon Hover Effects ==== */
+.tech-icon:hover, .stem-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+    animation: bounce 3s ease-in-out infinite; 
+    animation-delay: -1.5s; /* Sync with ::before animation */
+}
+
+/* ==== Bubble Aura Behind Icons ==== */
+.tech-icon::before, .stem-icon::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%,
+                                 rgba(255, 255, 255, 0.6) 0%,
+                                 rgba(0, 255, 255, 0.2) 60%,
+                                 rgba(0, 0, 0, 0.1) 100%);
+    box-shadow: 
+        0 0 10px 2px rgba(0, 255, 255, 0.3),
+        0 5px 15px rgba(0, 0, 0, 0.3),
+        inset 0 2px 8px rgba(255, 255, 255, 0.3);
+    z-index: -1;
+    animation: bounce 3s ease-in-out infinite; /* Bounce animation */
+}
+
+/* ==== Tooltip Styles ==== */
+.tech-icon .tech-icon-tooltip,
+.stem-icon .stem-icon-tooltip {
+    visibility: hidden;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+
+.tech-icon:hover .tech-icon-tooltip,
+.stem-icon:hover .stem-icon-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Tooltip Arrow */
+.tech-icon .tech-icon-tooltip::after,
+.stem-icon .stem-icon-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 
+                inset 0 2px 4px rgba(255, 255, 255, 0.2);
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+
+/* ==== Emoji Bubbles ==== */
 .emoji-bubbles {
     position: absolute;
     top: -40px;
     left: 0;
     width: 100%;
-    display: flex; 
+    display: flex;
     justify-content: center;
     opacity: 0;
     transition: all 0.5s ease;
     z-index: 10;
-    pointer-events: none;       /* allow clicking through the bubbles */
+    pointer-events: none;
 }
 
 .tooltip-container:hover .emoji-bubbles {
@@ -217,13 +152,13 @@
     justify-content: center;
     align-items: center;
     margin: 0 5px;
-    animation: float 3s ease-in-out infinite;
-    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.6) 0%, rgba(0,255,255,0.2) 60%, rgba(0,0,0,0.1) 100%);
+    animation: bounce 3s ease-in-out infinite; /* Bounce animation */
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.6) 0%, rgba(0, 255, 255, 0.2) 60%, rgba(0, 0, 0, 0.1) 100%);
     box-shadow:
-        0 0 10px 2px rgba(0,255,255,0.3),
+        0 0 10px 2px rgba(0, 255, 255, 0.3),
         0 5px 15px rgba(0, 0, 0, 0.3),
-        inset 0 2px 8px rgba(255,255,255,0.3);
-    border: 1px solid rgba(255,255,255,0.2);
+        inset 0 2px 8px rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     position: relative;
@@ -231,28 +166,10 @@
     transform: translateY(0);
 }
 
-.emoji-bubble::after {
-    content: "";
-    position: absolute;
-    top: 8px;
-    left: 12px;
-    width: 12px;
-    height: 6px;
-    background: rgba(255,255,255,0.7);
-    border-radius: 50%;
-    filter: blur(2px);
-    opacity: 0.7;
-    pointer-events: none;
-}
-
-.emoji-bubble:nth-child(1) { animation-delay: 0s; }
-.emoji-bubble:nth-child(2) { animation-delay: 0.3s; }
-.emoji-bubble:nth-child(3) { animation-delay: 0.6s; }
-.emoji-bubble:nth-child(4) { animation-delay: 0.9s; }
-.emoji-bubble:nth-child(5) { animation-delay: 1.2s; }
-
-@keyframes float {
+/* ==== Bounce Animation ==== */
+@keyframes bounce {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
 }
+
