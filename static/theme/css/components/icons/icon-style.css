@@ -168,7 +168,7 @@
 
 .tooltip-container:hover .emoji-bubbles {
     opacity: 1;
-    top: -55px;
+    /* top: -55px; */
 }
 
 .emoji-bubble {
