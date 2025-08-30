@@ -1,0 +1,15 @@
+* {
+    font-family: var(--font-aclonica);
+    box-sizing: border-box;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Exclude LaTeX math elements from Aclonica font */
+.katex, .katex *,
+.MathJax, .MathJax *, 
+mjk-container, mjx-container *,
+.mjx-chtml, .mjx-chtml *,
+[class*="katex"], [class*="MathJax"] {
+    font-family: var(--font-math) !important;
+}
+

@@ -1,0 +1,49 @@
+.feature-box {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 70px;        /* Increased from 20px to 70px to make room for icons */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+    /* Add the prefixed version first (Safari/Chrome) */
+    -webkit-backdrop-filter: blur(5px);
+    /* Standard property (future-proof) */
+    backdrop-filter: blur(5px);
+    position: relative; /* needed for absolute postiioning of icons */
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box-content {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.feature-box-content h3 {
+    font-weight: bold;
+    background: var(--gradient-green-to-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 0;
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+}
+
+.feature-box-content p {
+    margin-bottom: 15px;
+    width: 100%;
+    color: whitesmoke;
+}

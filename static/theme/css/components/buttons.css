@@ -1,0 +1,87 @@
+.btn {
+    background-image: var(--gradient-light-to-dark-blue);
+    box-shadow: 0 4px 15px 0 rgba(56, 152, 255, 0.5);
+    width: 85%;
+    max-width: 180px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px auto;
+    height: 45px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+    font-family: var(--font-aclonica);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    color: white !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    line-height: 45px;      /* clear button text styling */
+}
+
+/* Style for text inside buttons */
+.btn span, .btn a, .btn p, .btn div {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: white !important;
+    background: transparent !important;
+    background-image: none !important;
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 0;
+}
+
+/* Fix for buttons that are themselves links */
+a.btn {
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Extra override for links inside buttons to ensure white color */
+.btn > a {
+    color: white !important;
+    text-decoration: none;
+}
+
+/* Button style 2 */
+.btn-style-2 {
+    background-image: var(--gradient-blue-to-purple) !important;
+    border: none;
+    color: white !important;
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
+    box-shadow: 0 4px 15px 0 rgba(20, 165, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background-position: 100% 0;
+    filter: brightness(1.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.feature-box-content .btn {
+    width: 90%;
+    max-width: 180px;
+    margin-top: auto;
+    align-self: center;     /* center the button */
+}
